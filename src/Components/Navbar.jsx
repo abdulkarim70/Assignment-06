@@ -17,9 +17,10 @@ const Navbar = () => {
  </div>
 
 <div className='login flex items-center justify-center gap-2 mr-[200px] text-4 font-semibold'>
-  <CiShoppingCart /> <button>Login</button>
+  <div className='flex items-center justify-center'><CiShoppingCart className='text-2xl ' /><p >0</p>
+    </div> <button>Login</button>
   <div className=''>
-    <button className='btn btn-primary rounded-full bg-gradient-to-r from-purple-700 via-purple-500 shadow-lg text-[$FFFFFF]'>Get Started</button>
+    <button className='btn btn-primary rounded-full bg-gradient-to-r from-purple-700 via-purple-500 shadow-lg text-[#FFFFFF]'>Get Started</button>
   </div>
 </div>
 
