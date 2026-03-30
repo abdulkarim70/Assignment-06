@@ -4,7 +4,7 @@ import BannerImgage from "../assets/banner.png"
 const Banner = () => {
     return (
         <div>
-        <div  className='flex px-[200px] gap-4 py-[60px]'>
+        <div  className='flex px-[200px] gap-6 py-[60px] mx-auto max-w-[1600px]  '>
 <div className='w-[640px] h-[406px]'>
     <div>
     <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gray-100 shadow-sm">
@@ -33,7 +33,7 @@ const Banner = () => {
 </div>
 </div>
 <div >
-    <img className='w-100 h-110' src={BannerImgage} alt="" />
+    <img className='w-[500px] h-[590px]' src={BannerImgage} alt="" />
 </div>
 
             </div>  
