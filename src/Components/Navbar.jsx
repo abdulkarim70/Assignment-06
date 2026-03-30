@@ -1,12 +1,12 @@
 import React from 'react';
-
+import { CiShoppingCart } from 'react-icons/ci';
 const Navbar = () => {
     return (
         <div>
-           <div className=' navbar max-w-7xl h-[92px]'>
- <h2>DigiTools</h2>
+           <div className=' navbar mx-auto max-w-7xl h-[92px] justify-between '>
+ <h2 className='ml-40  text-3xl font-bold '><span className='text-purple-700'>Digi</span><span className='text-purple-600'>Tools</span> </h2>
  <div className=' '> 
-    <ul className='flex gap-3 [&>li>a]:no-underline'>
+    <ul className='flex gap-4 [&>li>a]:no-underline text-4 font-semibold'>
         <li><a  href="">Product</a></li>
         <li><a  href="">Features</a></li>
         <li><a href="">Pricing</a></li>
@@ -16,8 +16,11 @@ const Navbar = () => {
 
  </div>
 
-<div className='login'>
-
+<div className='login flex items-center justify-center gap-2 mr-[200px] text-4 font-semibold'>
+  <CiShoppingCart /> <button>Login</button>
+  <div className=''>
+    <button className='btn btn-primary rounded-full bg-gradient-to-r from-purple-700 via-purple-500 shadow-lg text-[$FFFFFF]'>Get Started</button>
+  </div>
 </div>
 
             </div> 
