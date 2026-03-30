@@ -7,7 +7,7 @@ const Banner = () => {
         <div  className='flex px-[200px] gap-6 py-[60px] mx-auto max-w-[1600px]  '>
 <div className='w-[640px] h-[406px]'>
     <div>
-    <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gray-100 shadow-sm">
+    <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#E1E7FF] shadow-sm">
   
   <span className="w-2 h-2 bg-purple-600 rounded-full animate-pulse"></span>
   
