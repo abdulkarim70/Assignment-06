@@ -33,7 +33,7 @@ const promiseData=loadData()
         </div>
    
   { active==='products'&& <Suspense fallback={<p>Data loading....</p>}> <PricingCard promiseData={promiseData} carts={carts} setcarts={setcarts}/></Suspense>}
-  { active==='cart'&& <Cart carts={carts}/>}
+  { active==='cart'&& <Cart carts={carts} setcarts={setcarts}/>}
     </>
   )
 }
