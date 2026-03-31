@@ -18,31 +18,13 @@ const PremiumSection = () => {
         </p>
 
     
-        <div className="inline-flex rounded-full p-1">
+        <div className="flex gap-2 items-center justify-center p-1">
           
         
-          <button
-            onClick={() => setActive("products")}
-            className={`px-8 py-3 rounded-full text-[16px]  ${
-              active === "products"
-                ? "bg-gradient-to-r from-purple-500 to-indigo-600 text-white shadow-lg"
-                : "text-gray-700"
-            }`}
-          >
-            Products
-          </button>
+          <button onClick={()=> setActive('products')} className= {active==='products'?"btn btn-primary rounded-full bg-gradient-to-r from-purple-700 via-purple-500 shadow-lg text-[#FFFFFF]":'btn  rounded-full'}>Products</button>
 
          
-          <button
-            onClick={() => setActive("cart")}
-            className={`px-8 py-3 rounded-full font-medium  ${
-              active === "cart"
-                ? "bg-gradient-to-r from-purple-500 to-indigo-600 text-[#FFFFFF] shadow-lg"
-                : "text-gray-700"
-            }`}
-          >
-            Cart (0)
-          </button>
+       <button onClick={()=> setActive('cart')} className= {active==='cart'?"btn btn-primary rounded-full bg-gradient-to-r from-purple-700 via-purple-500 shadow-lg text-[#FFFFFF]":'btn rounded-full'}>Cart-(0)</button>
         </div>
 
       </div>

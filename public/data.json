@@ -1,0 +1,92 @@
+[
+  {
+    "id": 1,
+    "name": "AI Writing Pro",
+    "description": "Generate high-quality blogs and marketing content.\nFast and accurate AI-powered writing.",
+    "price": 29,
+    "period": "monthly",
+    "tag": "Best Seller",
+    "tagType": "best-seller",
+    "features": [
+      "Unlimited AI generations",
+      "50+ writing templates",
+      "Grammar checker"
+    ],
+    "icon": "https://fakeimg.pl/64x64/?text=AI"
+  },
+  {
+    "id": 2,
+    "name": "Design Templates Pack",
+    "description": "Premium templates for social media and presentations.\nBoost your design workflow easily.",
+    "price": 49,
+    "period": "one-time",
+    "tag": "Popular",
+    "tagType": "popular",
+    "features": [
+      "2000+ templates",
+      "Monthly updates",
+      "Commercial license"
+    ],
+    "icon": "https://fakeimg.pl/64x64/?text=Design"
+  },
+  {
+    "id": 3,
+    "name": "Premium Stock Assets",
+    "description": "Millions of royalty-free assets.\nPerfect for any creative project.",
+    "price": 19,
+    "period": "monthly",
+    "tag": "New",
+    "tagType": "new",
+    "features": [
+      "10M+ assets",
+      "Commercial use",
+      "No attribution"
+    ],
+    "icon": "https://fakeimg.pl/64x64/?text=Stock"
+  },
+  {
+    "id": 4,
+    "name": "Automation Toolkit",
+    "description": "Automate repetitive tasks easily.\nSave time and increase productivity.",
+    "price": 79,
+    "period": "monthly",
+    "tag": "Popular",
+    "tagType": "popular",
+    "features": [
+      "50+ automations",
+      "API access",
+      "Custom workflows"
+    ],
+    "icon": "https://fakeimg.pl/64x64/?text=Auto"
+  },
+  {
+    "id": 5,
+    "name": "Resume Builder Pro",
+    "description": "Create professional resumes quickly.\nOptimized for ATS systems.",
+    "price": 15,
+    "period": "one-time",
+    "tag": "New",
+    "tagType": "new",
+    "features": [
+      "100+ templates",
+      "ATS optimization",
+      "Export to PDF"
+    ],
+    "icon": "https://fakeimg.pl/64x64/?text=Resume"
+  },
+  {
+    "id": 6,
+    "name": "Social Media Content Kit",
+    "description": "Create engaging social media content.\nAll-in-one toolkit for creators.",
+    "price": 39,
+    "period": "monthly",
+    "tag": "Best Seller",
+    "tagType": "best-seller",
+    "features": [
+      "5000+ assets",
+      "Scheduler included",
+      "Analytics dashboard"
+    ],
+    "icon": "https://fakeimg.pl/64x64/?text=Social"
+  }
+]
