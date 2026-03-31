@@ -1,6 +1,9 @@
 import React from 'react';
 
-const Card = ({card}) => {
+const Card = ({card, carts, setcarts}) => {
+  const handleCard=()=>{
+    setcarts([...carts, card])
+  }
     return (
               <div className="bg-white rounded-2xl shadow-md p-6  space-y-4 relative">
 
@@ -39,7 +42,7 @@ const Card = ({card}) => {
   </ul>
 
   
-  <button className="w-full py-2 rounded-full text-white bg-gradient-to-r from-purple-700 via-purple-500 to-purple-600 hover:opacity-90 transition">
+  <button onClick={handleCard} className="w-full py-2 rounded-full text-white bg-gradient-to-r from-purple-700 via-purple-500 to-purple-600 hover:opacity-90 transition">
     Buy Now
   </button>
 

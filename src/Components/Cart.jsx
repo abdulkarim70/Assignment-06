@@ -1,6 +1,7 @@
 import React from "react";
 
-const Cart = () => {
+const Cart = ({carts}) => {
+    console.log(carts);
   return (
     <div className="min-h-screen bg-gray-100 flex items-center justify-center p-6">
       <div className="w-full max-w-4xl bg-white rounded-2xl shadow-md p-8">
@@ -8,37 +9,23 @@ const Cart = () => {
         <h2 className="text-2xl font-semibold mb-6">Your Cart</h2>
 
         {/* Cart Item 1 */}
-        <div className="flex items-center justify-between bg-gray-50 rounded-xl p-5 mb-4">
+        {carts.map((cart, index)=>
+        <div key={index} className="flex items-center justify-between bg-gray-50 rounded-xl p-5 mb-4">
           <div className="flex items-center gap-4">
             <div className="w-12 h-12 rounded-full bg-gray-200 flex items-center justify-center text-xl">
-              ✏️
+              <img src={cart.icon} alt="icon" />
             </div>
             <div>
-              <h3 className="font-medium text-lg">AI Writing Pro</h3>
-              <p className="text-gray-500">$29</p>
+              <h3 className="font-medium text-lg">{cart.name}</h3>
+              <p className="text-gray-500">{cart.price}</p>
             </div>
           </div>
           <button className="text-pink-500 font-medium hover:underline">
             Remove
           </button>
-        </div>
+        </div>)}
 
-        {/* Cart Item 2 */}
-        <div className="flex items-center justify-between bg-gray-50 rounded-xl p-5 mb-6">
-          <div className="flex items-center gap-4">
-            <div className="w-12 h-12 rounded-full bg-gray-200 flex items-center justify-center text-xl">
-              🎨
-            </div>
-            <div>
-              <h3 className="font-medium text-lg">Design Templates Pack</h3>
-              <p className="text-gray-500">$49</p>
-            </div>
-          </div>
-          <button className="text-pink-500 font-medium hover:underline">
-            Remove
-          </button>
-        </div>
-
+     
         {/* Total */}
         <div className="flex justify-between items-center mb-6">
           <span className="text-gray-500">Total:</span>

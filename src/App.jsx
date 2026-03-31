@@ -15,6 +15,7 @@ const loadData=async()=>{
 function App() {
 const promiseData=loadData()
  const [active, setActive] = useState("products");
+ const [carts, setcarts]=useState([])
   return (
     < >
    <Navbar/>
@@ -28,11 +29,11 @@ const promiseData=loadData()
           <button onClick={()=> setActive('products')} className= {active==='products'?"btn btn-primary rounded-full bg-gradient-to-r from-purple-700 via-purple-500 shadow-lg text-[#FFFFFF]":'btn  rounded-full'}>Products</button>
 
          
-       <button onClick={()=> setActive('cart')} className= {active==='cart'?"btn btn-primary rounded-full bg-gradient-to-r from-purple-700 via-purple-500 shadow-lg text-[#FFFFFF]":'btn rounded-full'}>Cart-(0)</button>
+       <button onClick={()=> setActive('cart')} className= {active==='cart'?"btn btn-primary rounded-full bg-gradient-to-r from-purple-700 via-purple-500 shadow-lg text-[#FFFFFF]":'btn rounded-full'}>Cart-{carts.length}</button>
         </div>
    
-  { active==='products'&& <Suspense fallback={<p>Data loading....</p>}> <PricingCard promiseData={promiseData}/></Suspense>}
-  { active==='cart'&& <Cart/>}
+  { active==='products'&& <Suspense fallback={<p>Data loading....</p>}> <PricingCard promiseData={promiseData} carts={carts} setcarts={setcarts}/></Suspense>}
+  { active==='cart'&& <Cart carts={carts}/>}
     </>
   )
 }
