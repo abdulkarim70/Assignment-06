@@ -1,10 +1,12 @@
-import { useState } from "react";
+import React from "react";
 
-const PremiumSection = () => {
-  const [active, setActive] = useState("products");
+const PremiumSection = ({active, setActive}) => {
+ 
+  
 
   return (
-    <div className=" py-20  mx-auto mx-w-[1200px] px-[200px]">
+   <div>
+      <div className="py-20 mx-auto max-w-[1200px] px-4">
       <div className="max-w-4xl mx-auto text-center">
        
         <h1 className="text-5xl font-bold mb-4">
@@ -18,17 +20,11 @@ const PremiumSection = () => {
         </p>
 
     
-        <div className="flex gap-2 items-center justify-center p-1">
-          
-        
-          <button onClick={()=> setActive('products')} className= {active==='products'?"btn btn-primary rounded-full bg-gradient-to-r from-purple-700 via-purple-500 shadow-lg text-[#FFFFFF]":'btn  rounded-full'}>Products</button>
-
-         
-       <button onClick={()=> setActive('cart')} className= {active==='cart'?"btn btn-primary rounded-full bg-gradient-to-r from-purple-700 via-purple-500 shadow-lg text-[#FFFFFF]":'btn rounded-full'}>Cart-(0)</button>
-        </div>
 
       </div>
     </div>
+   
+   </div>
   );
 };
 

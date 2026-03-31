@@ -4,9 +4,9 @@ const PricingCard = ({promiseData}) => {
     const cards=use(promiseData)
     console.log(cards);
     return (
-        <div className='flex grid grid-cols-3 gap-3'>
-            {cards.map(card=>
-                <Card card={card}/>
+        <div className=' grid grid-cols-3 gap-3 py-4'>
+            {cards.map((card, index)=>
+                <Card card={card} key={index}/>
             )}
              </div>
     );

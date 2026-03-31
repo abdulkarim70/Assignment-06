@@ -2,7 +2,7 @@ import React from 'react';
 
 const Card = ({card}) => {
     return (
-              <div className="bg-white rounded-2xl shadow-md p-6 max-w-sm space-y-4 relative">
+              <div className="bg-white rounded-2xl shadow-md p-6  space-y-4 relative">
 
   {/* <!-- Badge --> */}
   <span className="absolute top-4 right-4 text-xs px-3 py-1 rounded-full bg-yellow-100 text-yellow-600">
@@ -10,8 +10,8 @@ const Card = ({card}) => {
   </span>
 
   {/* <!-- Icon --> */}
-  <div className="w-12 h-12 flex items-center justify-center rounded-full bg-gray-100">
-    
+  <div className="w-12 h-12 flex items-center justify-center rounded-full bg-gray-100 ">
+    <img src={card.icon} alt="icon" />
   </div>
 
   
@@ -31,15 +31,11 @@ const Card = ({card}) => {
 
 
   <ul className="space-y-2 text-sm text-gray-600">
-    <li className="flex items-center gap-2">
-      <span className="text-green-500">✔</span> Unlimited AI generations
-    </li>
-    <li className="flex items-center gap-2">
-      <span className="text-green-500">✔</span> 50+ writing templates
-    </li>
-    <li className="flex items-center gap-2">
-      <span className="text-green-500">✔</span> Grammar checker
-    </li>
+    {card.features.map((feature, index)=>
+    <li key={index} className="flex items-center gap-2">
+      <span className="text-green-500">✔</span> {feature}
+    </li>)}
+    
   </ul>
 
   
