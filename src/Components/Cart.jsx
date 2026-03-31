@@ -2,10 +2,10 @@ import React, { useState } from "react";
 
 const Cart = ({carts, setcarts}) => {
   const totalPrice = carts.reduce((sum, cart) => sum + cart.price, 0);
-   const [cartitems, setcartitems]=useState(carts)
+   
    const handleRemove=(cart)=>{
-    const updatedCart = cartitems.filter(c=> c.id !==cart.id)
-    setcartitems(updatedCart)
+    const updatedCart = carts.filter(c=> c.id !==cart.id)
+    setcarts(updatedCart)
    }
    const handleCheckout=()=>{
     setcarts([])
