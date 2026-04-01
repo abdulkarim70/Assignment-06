@@ -17,8 +17,8 @@ const Banner = () => {
 
 </div>
 </div>
-<span><h2 className='text-[#101727] text-[65px] font-extrabold' >Supercharge Your</h2></span>
-<span><h2 className='text-[#101727] text-[65px] font-extrabold'>Digital WorkFlow</h2></span>
+<span><h2 className='text-[#101727] text-[65px] font-bold' >Supercharge Your</h2></span>
+<span><h2 className='text-[#101727] text-[65px] font-bold'>Digital WorkFlow</h2></span>
 <div className='p text-[#627382] text-[18px]'>
 <span><p>Access premium AI tools, design assets, templates, and productivity</p></span>
 <span><p>software—all in one place. Start creating faster today.</p>

@@ -9,6 +9,7 @@ import Cart from "./Components/Cart"
 import StepSection from "./Components/StepSection"
 import PricingSection from "./Components/PricingSection"
 import CTASection from "./Components/CtaSection"
+import Footer from "./Components/Footer"
 
 const loadData=async()=>{
   const res= await fetch('/data.json')
@@ -40,6 +41,7 @@ const promiseData=loadData()
   <StepSection/>
   <PricingSection/>
   <CTASection/>
+  <Footer/>
     </>
   )
 }

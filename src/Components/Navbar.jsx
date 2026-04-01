@@ -3,7 +3,7 @@ import { CiShoppingCart } from 'react-icons/ci';
 const Navbar = ({ carts }) => {
     return (
         <div>
-           <div className=' navbar mx-auto max-w-[1600px] h-[92px] justify-between items-center px-[200px] '>
+           <div className=' navbar  mx-auto max-w-[1600px] h-[92px] justify-between items-center px-[200px] '>
  <h2 className='  text-3xl font-bold '><span className='text-purple-700'>Digi</span><span className='text-purple-600'>Tools</span> </h2>
  <div className=' '> 
     <ul className='flex gap-4 [&>li>a]:no-underline text-4 font-semibold '>

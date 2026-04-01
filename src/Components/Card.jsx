@@ -7,14 +7,14 @@ const Card = ({card, carts, setcarts}) => {
     toast('Item added to cart!')
   }
     return (
-              <div className="bg-white rounded-2xl shadow-md p-6  space-y-4 relative">
+              <div className="bg-white rounded-2xl shadow-md p-6  h-full  space-y-1 relative">
 
-  {/* <!-- Badge --> */}
+  
   <span className="absolute top-4 right-4 text-xs px-3 py-1 rounded-full bg-yellow-100 text-yellow-600">
 {card.tag}
   </span>
 
-  {/* <!-- Icon --> */}
+  
   <div className="w-12 h-12 flex items-center justify-center rounded-full bg-gray-100 ">
     <img src={card.icon} alt="icon" />
   </div>
