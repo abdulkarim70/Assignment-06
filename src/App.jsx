@@ -6,6 +6,9 @@ import Stat from "./Components/Stat"
 import { useState } from "react"
 import { Suspense } from "react"
 import Cart from "./Components/Cart"
+import StepSection from "./Components/StepSection"
+import PricingSection from "./Components/PricingSection"
+import CTASection from "./Components/CtaSection"
 
 const loadData=async()=>{
   const res= await fetch('/data.json')
@@ -34,6 +37,9 @@ const promiseData=loadData()
    
   { active==='products'&& <Suspense fallback={<p>Data loading....</p>}> <PricingCard promiseData={promiseData} carts={carts} setcarts={setcarts}/></Suspense>}
   { active==='cart'&& <Cart carts={carts} setcarts={setcarts}/>}
+  <StepSection/>
+  <PricingSection/>
+  <CTASection/>
     </>
   )
 }
