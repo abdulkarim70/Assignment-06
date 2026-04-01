@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+
 import { toast } from "react-toastify";
 
 const Cart = ({carts, setcarts}) => {
@@ -44,7 +44,7 @@ const Cart = ({carts, setcarts}) => {
         </div>
 
        
-        <button onClick={handleCheckout} className="w-full py-4 rounded-full text-white font-medium text-lg 
+        <button onClick={handleCheckout} disabled={carts.length===0} className="w-full py-4 rounded-full text-white font-medium text-lg 
           bg-gradient-to-r from-purple-600 to-pink-500 
           hover:opacity-90 transition">
           Proceed To Checkout
