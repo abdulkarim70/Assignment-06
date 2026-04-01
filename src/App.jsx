@@ -18,7 +18,7 @@ const promiseData=loadData()
  const [carts, setcarts]=useState([])
   return (
     < >
-   <Navbar/>
+   <Navbar carts={carts}/>
    <Banner/>
    <Stat/>
    <PremiumSection active={active} setActive={setActive}/>

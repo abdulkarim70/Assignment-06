@@ -1,8 +1,10 @@
 import React from 'react';
+import { toast } from 'react-toastify';
 
 const Card = ({card, carts, setcarts}) => {
   const handleCard=()=>{
     setcarts([...carts, card])
+    toast('Item added to cart!')
   }
     return (
               <div className="bg-white rounded-2xl shadow-md p-6  space-y-4 relative">
