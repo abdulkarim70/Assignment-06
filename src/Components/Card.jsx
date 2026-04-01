@@ -3,6 +3,12 @@ import { toast } from 'react-toastify';
 
 const Card = ({card, carts, setcarts}) => {
   const handleCard=()=>{
+const isFind= carts.find(item=> item.id===card.id)
+if(isFind){
+  toast.error('Item already added')
+  return
+}
+
     setcarts([...carts, card])
     toast('Item added to cart!')
   }
